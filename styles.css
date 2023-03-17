@@ -1,24 +1,20 @@
 body{
-    
-    background-color: #A6BDE0;
+    background-color: #2B3467;
+    display: flex;
+    margin:0;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     flex-direction: column;
-    margin: 0;
-  
-    
-    
 }
-html{
-    height: 100%;
-}
-
 .prezentare{
     display: flex;
-    flex-direction: row;
-   
-    align-items: center;
-    margin-left:0.7cm;
-    margin-right: 0.7cm;
-    margin-top: 0.5cm;
+   background-color: rgba(255, 250, 250, 0.665);
+    margin:0.5cm;
+
+    
+    
     
 }
 .citat{
@@ -26,32 +22,28 @@ html{
     justify-content:center;
     align-items:flex-end;
     flex-direction: column;
-    background-color: #E0C9A6;
-    padding: 0.4cm;
+    padding: 0.2cm;
     
   
 }
 .stanga{
     display: flex;
     flex-direction: column;
-    margin-left: 1cm;
-    background-color: #E0C9A6 ;
-    padding-right: 0;
-    padding-top: 0.1;
+    background-color: #EDF285;
+    align-items: center;
+    padding-top: 0.5cm;
+    align-items: center;
+    
     
 }
 .centru{
     display: flex;
+    margin-top: 1cm;
+    flex-direction: column; 
+    align-items: center;
     
-    align-self: flex-start;
-    flex-direction:column;
-    margin-left:1cm;
-    margin-top: 1cm; 
-    justify-content: center;
-    gap: 1cm;
     
 }
-
 i{
     display: flex;
    font-weight: 600;
@@ -61,77 +53,93 @@ i{
 ul{
     list-style-type: none;
     display: flex;
-    gap: 1.5em;
     font-size: 18px;
     flex-direction: column;
-    padding: 0cm;
-    margin-top: 0.8cm;
-    padding-left: 0.1cm;
-    
+    padding: 0.2cm;
+    padding-top: 0;
    
 }
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 0.6cm;
-}
-    img{
-        height: 5cm;
-        width: auto;
-        
+
+    #poza img{
+       height: 6cm;
+       width: auto;
     }
     .scris{
-        font-family: 'Crimson Text', serif;
+        font-family: 'Cormorant Garamond', serif;
         font-size: 0.7cm;
         display: flex;
         margin: 0;
-        background-color: #E0C9A6;
+        
         
     }
-    .poza{
+    .footer{
         display: flex;
-        background-color:white;
-        
+        background-color: #BAD7E9;
+        height: 1cm;
+        width: auto;
+        font-size: 0.5cm;
+        justify-content: center;
+        align-items: center;
     }
-    #slideshow {
+    .buton {
+        background-color: inherit;
+        border: none;
+        color: black;
+        padding: 15px 32px;
         text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+      }
+    
+      
+      .container{
+        width: 85vmin;
+        
+        
+        top: 50%;
+        left: 50%;
         overflow: hidden;
-        height: 8cm;
-        width: 18cm;
-        margin: 0;
-        margin-top: 1cm;
-        margin-bottom: 1cm;
-        margin-left: 1cm;
-        margin-right: 1cm;
-        
-      }
-      
-      .slide-wrapper {
-        width: 2912px;
-        -webkit-animation: slide 18s ease infinite;
-        
-      }
-      
-      .slide {
-        float:right;
-        height: 8cm;
-        width: 19cm;
-      }
-      
-      
-      
-      img.slide-photo {
-        color: #000;
-        text-align: center;
-       height: 8cm;
-       width: auto;
-      }
-      @-webkit-keyframes slide {
-        20% {margin-left: 0px;}
-        30% {margin-left: -728px;}
-        50% {margin-left: -728px;}
-        60% {margin-left: -1456px;}
-        70% {margin-left: -1456px;}
-        80% {margin-left: -2184px;}
-        90% {margin-left: -2184px;}
-      }
+        border: 10px solid #2B3467;
+        border-radius: 8px;
+        box-shadow: 10px 25px 30px rgba(24, 24, 30, 0.3);
+        display: flex;
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+        animation: slide 18s infinite;
+    }
+    @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        25%{
+            transform: translateX(0);
+        }
+        30%{
+            transform: translateX(-100%);
+        }
+        50%{
+            transform: translateX(-100%);
+        }
+        55%{
+            transform: translateX(-200%);
+        }
+        75%{
+            transform: translateX(-200%);
+        }
+        80%{
+            transform: translateX(-300%);
+        }
+        100%{
+            transform: translateX(-300%);
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .links{
+        align-items: center;
+    }
