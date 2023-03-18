@@ -26,6 +26,8 @@ i{
 p{
     color: #990000;
     font-size: 25px;
+    margin:0cm;
+    padding: 1cm;
 }
 h1{
     display: flex;
