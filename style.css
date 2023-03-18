@@ -1,25 +1,32 @@
 body{
     flex-direction: column;
     background-color: #9DC08B;
+
 }
 .prezentare{
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: 'Cormorant Garamond', serif;
+    
 }
 a{
     align-self: self-start;
 }
 i{
- font-size: 20px;   
+ font-size: 20px;
+ justify-self: end;   
 }
 .titlu{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 }
 p{
+    color: #990000;
     font-size: 25px;
+}
+h1{
+    display: flex;
 }
