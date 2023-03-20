@@ -1,6 +1,6 @@
 body{
     flex-direction: column;
-    background-color: #2B3467;
+    background-color: #e0ac69;
 
 }
 .prezentare{
@@ -9,7 +9,9 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Cormorant Garamond', serif;
-    color: #E8F9FD;
+    color: black;
+    margin:1cm;
+    border: 7px solid #f1c27d;
     
 }
 a{
